@@ -57,6 +57,7 @@ img {
   margin: 0;
   list-style: none;
 }
+
 /* Header */
 
 .container {
@@ -402,9 +403,7 @@ img {
 }
 
 .flex-element {
-  margin: 20px 0;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding: 20px 24px;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
