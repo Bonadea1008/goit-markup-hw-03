@@ -4,9 +4,9 @@
   box-sizing: border-box;
 }
 
-* {
+/* * {
   outline: 1px solid teal;
-}
+} */
 
 :root {
   --primary-text-color: #000000;
@@ -66,6 +66,10 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   align-items: center;
+}
+
+.header-section {
+  border-bottom: 1px solid #ececec;
 }
 
 .logo {
@@ -200,17 +204,6 @@ img {
   margin-bottom: 10px;
 }
 
-.section-title {
-  margin-right: auto;
-  margin-left: auto;
-
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--primary-text-color);
-}
-
 .title {
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -236,9 +229,14 @@ img {
 }
 
 .about-title {
-  width: 368px;
+  min-width: 366px;
   margin-bottom: 50px;
-  border-block: 0;
+
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
 }
 
 /* Team */
@@ -247,8 +245,14 @@ img {
 }
 
 .our-team-title {
-  width: 264px;
+  min-width: 264px;
   margin-bottom: 50px;
+
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
 }
 
 .team-list {
@@ -262,12 +266,6 @@ img {
 .team-container {
   margin-top: 30px;
   padding-bottom: 30px;
-}
-
-.section-title {
-  min-width: 266px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .team-title {
@@ -290,6 +288,9 @@ img {
 }
 
 .team-link {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
   background-color: var(--background-primary);
 }
 
@@ -347,20 +348,20 @@ img {
 }
 
 /* Portfolio */
-.filter-section {
-  margin-top: 94px;
-  margin-bottom: 34px;
-}
-
 .list-filter {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 44px;
+  min-width: 575px;
+}
+
+.link-filter:not(:last-child) {
+  margin-right: 20px;
 }
 
 .button-filter {
   padding: 6px 22px;
-  margin-right: 8px;
   border-radius: 4px;
   border: #f5f4fa;
 
@@ -372,10 +373,6 @@ img {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   cursor: pointer;
-}
-
-.list-filter (:last-child) {
-  margin-right: 0;
 }
 
 .button-filter:hover {
@@ -405,5 +402,10 @@ img {
 }
 
 .flex-element {
-  margin: 20px 24px;
+  margin: 20px 0;
+  padding-left: 24px;
+  padding-right: 24px;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
