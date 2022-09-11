@@ -13,7 +13,7 @@
   --secondary-text-color: #757575;
   --hero-text-color: #ffffff;
   --accent-color: #2196f3;
-  --background-primary: #f5f5f5;
+  --background-primary: #ffffff;
   --background-secondary: #2f303a;
 }
 
@@ -267,6 +267,7 @@ img {
 .team-container {
   margin-top: 30px;
   padding-bottom: 30px;
+  background-color: var(--background-primary);
 }
 
 .team-title {
